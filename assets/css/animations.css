@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Motion system — keyframes, entrance choreography, scroll reveals
+   Motion system — keyframes, scroll reveals, entrance choreography
    ========================================================================== */
 
 /* ---------- Keyframes ---------- */
@@ -7,12 +7,6 @@
 @keyframes gradient-drift {
   0%, 100% { background-position: 0% 50%; }
   50%      { background-position: 100% 50%; }
-}
-
-@keyframes float-orb {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33%      { transform: translate(4%, -6%) scale(1.08); }
-  66%      { transform: translate(-3%, 5%) scale(0.95); }
 }
 
 @keyframes marquee-scroll {
@@ -25,9 +19,9 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes word-rise {
-  from { opacity: 0; transform: translateY(100%) rotate(4deg); }
-  to   { opacity: 1; transform: translateY(0) rotate(0); }
+@keyframes line-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 
 @keyframes pulse-ring {
@@ -41,83 +35,23 @@
   50%      { transform: translateY(8px); opacity: 1; }
 }
 
-@keyframes drift-particle {
-  0%   { transform: translateY(0) translateX(0); opacity: 0; }
-  10%  { opacity: 1; }
-  90%  { opacity: 1; }
-  100% { transform: translateY(-120px) translateX(30px); opacity: 0; }
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to   { background-position: 200% 0; }
 }
 
-@keyframes curtain-lift {
-  from { transform: translateY(0); }
-  to   { transform: translateY(-100%); }
-}
-
-@keyframes intro-mark {
-  0%   { opacity: 0; transform: scale(0.8); }
-  40%  { opacity: 1; transform: scale(1); }
-  100% { opacity: 0; transform: scale(1.1); }
-}
-
-@keyframes ripple-out {
-  to { transform: scale(3); opacity: 0; }
-}
-
-/* ---------- Page-load curtain ---------- */
-
-.intro {
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-  background: var(--navy-900);
-  display: grid;
-  place-items: center;
-  animation: curtain-lift 700ms var(--ease-out) 750ms forwards;
-}
-
-.intro-mark {
-  width: 56px; height: 56px;
-  border-radius: 16px;
-  background: var(--gradient-accent);
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.125rem;
-  animation: intro-mark 1100ms var(--ease-out) forwards;
-}
-
-/* ---------- Hero headline: word-by-word rise ---------- */
-
-.split-word {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: bottom;
-  padding-bottom: 0.08em;
-}
-
-.split-word > span {
-  display: inline-block;
-  opacity: 0;
-  animation: word-rise 900ms var(--ease-out) forwards;
-  animation-delay: calc(900ms + var(--w, 0) * 70ms);
-}
-
-/* ---------- Hero entrance stagger (non-headline elements) ---------- */
+/* ---------- Hero entrance choreography ---------- */
 
 .hero-stagger > * {
   opacity: 0;
   animation: fade-up 900ms var(--ease-out) forwards;
 }
-.hero-stagger > *:nth-child(1) { animation-delay: 850ms; }
-.hero-stagger > *:nth-child(2) { animation-delay: 900ms; }
-.hero-stagger > *:nth-child(3) { animation-delay: 1150ms; }
-.hero-stagger > *:nth-child(4) { animation-delay: 1250ms; }
-.hero-stagger > *:nth-child(5) { animation-delay: 1350ms; }
-.hero-stagger > *:nth-child(6) { animation-delay: 1450ms; }
-
-/* The headline animates its own words, so it shouldn't fade as a block */
-.hero-stagger > h1 { opacity: 1; animation: none; }
+.hero-stagger > *:nth-child(1) { animation-delay: 120ms; }
+.hero-stagger > *:nth-child(2) { animation-delay: 240ms; }
+.hero-stagger > *:nth-child(3) { animation-delay: 360ms; }
+.hero-stagger > *:nth-child(4) { animation-delay: 480ms; }
+.hero-stagger > *:nth-child(5) { animation-delay: 600ms; }
+.hero-stagger > *:nth-child(6) { animation-delay: 720ms; }
 
 /* ---------- Scroll reveal ---------- */
 
@@ -127,7 +61,6 @@
     opacity var(--dur-slow) var(--ease-out),
     transform var(--dur-slow) var(--ease-out);
   transition-delay: calc(var(--i, 0) * 90ms);
-  will-change: opacity, transform;
 }
 
 [data-reveal="up"],
@@ -136,15 +69,10 @@
 [data-reveal="right"] { transform: translateX(40px); }
 [data-reveal="scale"] { transform: scale(0.94); }
 
-[data-reveal].is-visible { opacity: 1; transform: none; }
-
-/* Image wipe reveal — the picture uncovers itself rather than fading */
-.card-media img {
-  clip-path: inset(0 0 100% 0);
-  transition: clip-path 1s var(--ease-out) 150ms, transform var(--dur-slow) var(--ease-out);
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
 }
-
-[data-reveal].is-visible .card-media img { clip-path: inset(0 0 0 0); }
 
 /* ---------- Animated section label underline ---------- */
 
@@ -164,27 +92,18 @@
 [data-reveal].is-visible .section-label::after,
 .section-label.is-visible::after { transform: scaleX(1); }
 
-/* ---------- Button ripple ---------- */
-
-.ripple {
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.45);
-  width: 60px; height: 60px;
-  margin: -30px 0 0 -30px;
-  pointer-events: none;
-  animation: ripple-out 650ms var(--ease-out) forwards;
-}
-
-/* ---------- Reduced motion ---------- */
+/* ---------- Reduced motion: strip everything down ---------- */
 
 @media (prefers-reduced-motion: reduce) {
-  .intro { display: none; }
-  .hero-stagger > * { opacity: 1; animation: none; }
-  .split-word > span { opacity: 1; animation: none; }
-  [data-reveal] { opacity: 1; transform: none; transition: none; }
-  .card-media img { clip-path: none; transition: none; }
+  .hero-stagger > * {
+    opacity: 1;
+    animation: none;
+  }
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
   .section-label::after { transform: scaleX(1); transition: none; }
-  .orb, .marquee-track, .scroll-cue-dot, .particle { animation: none !important; }
-  .ripple { display: none; }
+  .marquee-track, .scroll-cue-dot, .pulse-dot::after { animation: none !important; }
 }
