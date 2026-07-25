@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#0F0E0D"/>
+  <polyline points="60,380 180,320 300,350 420,260 540,300 660,220 740,250" fill="none" stroke="#E86A44" stroke-width="5"/>
+  <text x="60" y="90" font-family="Georgia, serif" font-size="26" fill="#F5F1E8">Data Trust</text>
+</svg>
