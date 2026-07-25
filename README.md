@@ -6,7 +6,7 @@ Source for the personal portfolio site, built as plain HTML/CSS/JS with no build
 
 - **Content**: bio text, project descriptions/links, blog posts — currently placeholder copy tailored to an MIS + AI + Legal Studies profile.
 - **`assets/resume/jude-zekra-resume.pdf`** — currently a minimal placeholder PDF. Replace with your real resume (keep the same filename, or update the references in `resume.html`).
-- **Contact form** — `index.html`'s contact form posts to `https://formspree.io/f/YOUR_FORM_ID`. Create a free form at formspree.io and swap in your real form ID.
+- **Contact** — currently a direct `mailto:` card (no backend, always works). If you'd rather have a real form, create a free form at formspree.io and swap the card in `index.html` for a `<form action="https://formspree.io/f/YOUR_ID" method="POST">`.
 - ~~Social links~~ — done: LinkedIn and GitHub point at the real profiles.
 - **Project/blog images** — `assets/img/projects/*.svg` and `assets/img/blog/*.svg` are hand-drawn placeholder mockups. Swap in real screenshots/photos when available.
 
