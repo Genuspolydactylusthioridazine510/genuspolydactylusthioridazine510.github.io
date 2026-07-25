@@ -224,7 +224,7 @@
   }
 
   /* ------------------------------------------------------------------
-     Card tilt + cursor spotlight
+     Card tilt
      ------------------------------------------------------------------ */
   document.querySelectorAll("[data-tilt]").forEach(function (card) {
     var MAX = 5;
@@ -235,8 +235,6 @@
       card.style.transform =
         "perspective(900px) rotateX(" + (-py * MAX) + "deg) rotateY(" + (px * MAX) +
         "deg) translateY(-8px)";
-      card.style.setProperty("--mx", (e.clientX - r.left) + "px");
-      card.style.setProperty("--my", (e.clientY - r.top) + "px");
     });
     card.addEventListener("mouseleave", function () { card.style.transform = ""; });
   });

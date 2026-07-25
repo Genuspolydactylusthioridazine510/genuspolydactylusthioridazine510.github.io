@@ -84,7 +84,6 @@
   color: #fff;
   font-weight: 700;
   font-size: 1.125rem;
-  box-shadow: var(--glow-blue-strong);
   animation: intro-mark 1100ms var(--ease-out) forwards;
 }
 
