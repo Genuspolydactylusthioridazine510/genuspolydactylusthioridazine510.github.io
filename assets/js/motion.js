@@ -33,8 +33,14 @@
   var counters = document.querySelectorAll("[data-count]");
   if (counters.length) {
     var runCount = function (el) {
-      var target = parseFloat(el.getAttribute("data-count"));
+      var raw = el.getAttribute("data-count");
+      var target = parseFloat(raw);
+      var prefix = el.getAttribute("data-count-prefix") || "";
       var suffix = el.getAttribute("data-count-suffix") || "";
+      // Match the source value's precision, so 3.87 counts as 3.87 and
+      // not 4 — Math.round would flatten every fractional stat.
+      var dot = raw.indexOf(".");
+      var decimals = dot === -1 ? 0 : raw.length - dot - 1;
       var duration = 1400;
       var start = null;
 
@@ -42,7 +48,7 @@
         if (start === null) start = ts;
         var p = Math.min((ts - start) / duration, 1);
         var eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
-        el.textContent = Math.round(target * eased) + suffix;
+        el.textContent = prefix + (target * eased).toFixed(decimals) + suffix;
         if (p < 1) window.requestAnimationFrame(step);
       };
       window.requestAnimationFrame(step);

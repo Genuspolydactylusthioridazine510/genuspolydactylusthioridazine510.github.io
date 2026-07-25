@@ -487,6 +487,24 @@
   outline: none;
 }
 
+/* ---------- Résumé bullets ----------
+   base.css strips list markers globally, so re-add them here as dots that
+   match the accent rather than reintroducing browser default discs. */
+.timeline-item ul li {
+  position: relative;
+  padding-left: var(--space-4);
+}
+
+.timeline-item ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 4px; height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 /* ---------- Empty state ---------- */
 .empty-state {
   display: flex;

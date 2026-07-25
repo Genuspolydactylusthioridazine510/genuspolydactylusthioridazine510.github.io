@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Chat interface answering a campus resource question">
+  <rect width="800" height="500" fill="#F5F8FF"/>
+  <rect x="70" y="50" width="660" height="400" rx="16" fill="#FFFFFF" stroke="#E2E8F5"/>
+
+  <rect x="70" y="50" width="660" height="54" rx="16" fill="#050A16"/>
+  <rect x="70" y="88" width="660" height="16" fill="#050A16"/>
+  <circle cx="98" cy="77" r="5" fill="#1668FF"/>
+  <text x="118" y="82" font-family="monospace" font-size="13" fill="#EAF1FF">UGA Resource Assistant</text>
+
+  <rect x="100" y="135" width="330" height="46" rx="12" fill="#EEF5FF"/>
+  <text x="118" y="163" font-family="Segoe UI, sans-serif" font-size="14" fill="#0A1224">Where do I find free tutoring?</text>
+
+  <rect x="290" y="205" width="410" height="106" rx="12" fill="#1668FF"/>
+  <text x="310" y="234" font-family="Segoe UI, sans-serif" font-size="14" fill="#FFFFFF">The Division of Academic Enhancement</text>
+  <text x="310" y="258" font-family="Segoe UI, sans-serif" font-size="14" fill="#FFFFFF">offers free drop-in tutoring at Milledge Hall.</text>
+  <text x="310" y="290" font-family="monospace" font-size="11" fill="#B4CFFF">source: uga_resources.csv</text>
+
+  <rect x="100" y="335" width="200" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F5"/>
+  <text x="118" y="360" font-family="monospace" font-size="11" fill="#59647D">GPT-3.5 API</text>
+  <rect x="316" y="335" width="180" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F5"/>
+  <text x="334" y="360" font-family="monospace" font-size="11" fill="#59647D">LangChain</text>
+  <rect x="512" y="335" width="188" height="40" rx="10" fill="#FFFFFF" stroke="#E2E8F5"/>
+  <text x="530" y="360" font-family="monospace" font-size="11" fill="#59647D">Streamlit</text>
+
+  <text x="100" y="415" font-family="monospace" font-size="12" fill="#0B4FD1">50+ UGA student resources indexed</text>
+</svg>

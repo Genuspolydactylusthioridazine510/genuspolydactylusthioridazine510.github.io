@@ -1,28 +1,52 @@
-# jude-zekra portfolio
+# judezekra.github.io
 
-Source for the personal portfolio site, built as plain HTML/CSS/JS with no build step, deployed via GitHub Pages.
+Personal portfolio for Jude Zekra — MIS student at the University of Georgia.
+Plain HTML/CSS/JS, no build step, deployed straight from `main` via GitHub Pages.
 
 ## Structure
 
-`index.html` (hero / about / projects / contact), `resume.html`, `404.html`.
-Styles in `assets/css` (variables → base → layout → components → animations),
-behavior in `assets/js` (`nav.js`, `scroll-reveal.js`, `smooth-scroll.js`, `motion.js`).
+```
+index.html      hero / about / experience / projects / contact
+resume.html     full résumé in HTML
+blog/           blog index (empty state — no posts written yet)
+404.html
+robots.txt, sitemap.xml
+assets/css/     variables → base → layout → components → animations
+assets/js/      nav.js, scroll-reveal.js, smooth-scroll.js, motion.js
+assets/img/     favicons, og-image, project artwork
+```
 
-There is no blog — the placeholder posts were removed. To add one later, create
-`blog/index.html` plus a page per post and re-add a nav link.
+CSS loads in that order and later files depend on earlier ones — `variables.css`
+holds every colour, spacing and type token, so start there for design changes.
 
-## Before going live, replace these placeholders
+## Content
 
-- **Content**: bio text, project descriptions/links, blog posts — currently placeholder copy tailored to an MIS + AI + Legal Studies profile.
-- **`assets/resume/jude-zekra-resume.pdf`** — currently a minimal placeholder PDF. Replace with your real resume (keep the same filename, or update the references in `resume.html`).
-- **Contact** — currently a direct `mailto:` card (no backend, always works). If you'd rather have a real form, create a free form at formspree.io and swap the card in `index.html` for a `<form action="https://formspree.io/f/YOUR_ID" method="POST">`.
-- ~~Social links~~ — done: LinkedIn and GitHub point at the real profiles.
-- **Project/blog images** — `assets/img/projects/*.svg` and `assets/img/blog/*.svg` are hand-drawn placeholder mockups. Swap in real screenshots/photos when available.
+All content is real, taken from the June 2026 résumé. Two deliberate omissions
+for a public page: **phone number and street address are not published**, since
+the site is indexed by search engines and scraped by bots. City-level location
+(Athens, GA) is included.
+
+There is no downloadable PDF résumé on the site — `resume.html` is the résumé.
+If you add a PDF later, redact the phone number first.
+
+## Motion
+
+`motion.js` handles the scroll progress bar, count-up stats, magnetic buttons
+and card tilt; `scroll-reveal.js` handles entrance animations. Everything is
+gated behind `prefers-reduced-motion`, and pointer effects additionally check
+for a fine pointer so touch devices skip them.
+
+Deliberately avoided: `blur()` filters on large elements, `backdrop-filter` on
+the sticky header, and `will-change` on many elements — each caused noticeable
+jank on lower-powered machines.
 
 ## Local preview
 
-Install the free "Live Server" VS Code extension, then right-click `index.html` → "Open with Live Server".
+Open `index.html` directly, or use the VS Code "Live Server" extension for
+auto-reload.
 
 ## Deploy
 
-See the project plan / conversation for step-by-step GitHub Pages deployment instructions.
+Commit and push to `main`. GitHub Pages rebuilds automatically within a minute.
+Asset paths are case-sensitive when served (Linux) but not locally (Windows) —
+mismatched casing 404s only after deploy.
