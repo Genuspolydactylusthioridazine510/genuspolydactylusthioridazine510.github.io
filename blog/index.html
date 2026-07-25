@@ -28,9 +28,11 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <div class="scroll-progress"></div>
+
+  <header class="site-header site-header--light">
     <div class="container">
-      <a href="../index.html" class="logo">Jude Zekra</a>
+      <a href="../index.html" class="logo"><span class="logo-mark">JZ</span> Jude Zekra</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -52,48 +54,48 @@
       <div class="container">
         <div class="section-head" data-reveal>
           <span class="section-label">Writing</span>
-          <h1 style="font-size:var(--fs-h1);">Writing</h1>
-          <p style="color:var(--ink-soft); margin-top:var(--space-4);">Notes on MIS, applied AI, and where legal studies fits into systems work.</p>
+          <h1 style="font-size:var(--fs-h1);">Notes on systems, AI &amp; policy</h1>
+          <p style="color:var(--ink-soft); margin-top:var(--space-4);">Where MIS, applied AI, and legal studies overlap — and what I learn building in that overlap.</p>
         </div>
 
         <div class="grid-12">
           <div class="span-4" data-reveal>
-            <div class="card">
+            <article class="card" data-tilt>
               <div class="card-media"><img src="../assets/img/blog/post-1.svg" alt=""></div>
               <div class="card-body">
                 <span class="card-index">Jan 12, 2026 · 4 min read</span>
                 <h3 class="card-title">What Building a Sales Dashboard Taught Me About Data Trust</h3>
                 <p class="card-desc">Why a dashboard is only as credible as the pipeline feeding it.</p>
                 <div class="tag-row"><span class="tag">MIS</span><span class="tag">BI</span></div>
-                <a href="post-mis-dashboard-lessons.html" class="card-link">Read →</a>
+                <a href="post-mis-dashboard-lessons.html" class="card-link">Read <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="span-4" data-reveal>
-            <div class="card">
+            <article class="card" data-tilt>
               <div class="card-media"><img src="../assets/img/blog/post-2.svg" alt=""></div>
               <div class="card-body">
                 <span class="card-index">Feb 3, 2026 · 6 min read</span>
                 <h3 class="card-title">A Plain-English Primer on AI Governance Frameworks</h3>
                 <p class="card-desc">EU AI Act risk tiers and the NIST AI RMF, explained without the jargon.</p>
                 <div class="tag-row"><span class="tag">AI</span><span class="tag">Governance</span></div>
-                <a href="post-ai-governance-primer.html" class="card-link">Read →</a>
+                <a href="post-ai-governance-primer.html" class="card-link">Read <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="span-4" data-reveal>
-            <div class="card">
+            <article class="card" data-tilt>
               <div class="card-media"><img src="../assets/img/blog/post-3.svg" alt=""></div>
               <div class="card-body">
                 <span class="card-index">Mar 21, 2026 · 5 min read</span>
                 <h3 class="card-title">Where Legal Studies Meets Systems Analysis</h3>
                 <p class="card-desc">Requirements gathering looks a lot like statutory interpretation once you notice it.</p>
                 <div class="tag-row"><span class="tag">Legal</span><span class="tag">Systems</span></div>
-                <a href="post-legal-tech-compliance.html" class="card-link">Read →</a>
+                <a href="post-legal-tech-compliance.html" class="card-link">Read <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
@@ -103,7 +105,7 @@
   <footer class="site-footer section--dark">
     <div class="container">
       <div class="footer-top">
-        <span class="logo">Jude Zekra</span>
+        <a href="../index.html" class="logo"><span class="logo-mark">JZ</span> Jude Zekra</a>
         <div style="display:flex; gap:var(--space-6);">
           <a href="mailto:judezekra@yahoo.com" class="nav-link">Email</a>
           <a href="https://linkedin.com" class="nav-link">LinkedIn</a>
@@ -119,5 +121,6 @@
   <script defer src="../assets/js/nav.js"></script>
   <script defer src="../assets/js/scroll-reveal.js"></script>
   <script defer src="../assets/js/smooth-scroll.js"></script>
+  <script defer src="../assets/js/motion.js"></script>
 </body>
 </html>

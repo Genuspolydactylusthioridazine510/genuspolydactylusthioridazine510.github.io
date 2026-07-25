@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jude Zekra — MIS, AI &amp; Legal Studies</title>
-  <meta name="description" content="Jude Zekra — MIS student at the University of Georgia with AI and Legal Studies certificates, working at the intersection of systems, data, and governance.">
+  <meta name="description" content="Jude Zekra — MIS student at the University of Georgia with certificates in Artificial Intelligence and Legal Studies. Systems, applied AI, and the rules that shape both.">
 
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -19,7 +19,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/variables.css">
   <link rel="stylesheet" href="assets/css/base.css">
@@ -29,9 +29,11 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <div class="scroll-progress"></div>
+
+  <header class="site-header section--dark">
     <div class="container">
-      <a href="index.html" class="logo">Jude Zekra</a>
+      <a href="index.html" class="logo"><span class="logo-mark">JZ</span> Jude Zekra</a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -50,49 +52,92 @@
 
   <main>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <h1 style="font-size:var(--fs-hero); max-width:16ch;" data-reveal>Systems, applied AI, and the rules that shape both.</h1>
-        <p style="font-size:var(--fs-body-lg); color:var(--ink-soft); max-width:52ch; margin-top:var(--space-6);" data-reveal>
-          I'm Jude Zekra — an MIS student at the University of Georgia with certificates in Artificial Intelligence and Legal Studies.
-        </p>
-        <div style="display:flex; gap:var(--space-3); margin-top:var(--space-8); flex-wrap:wrap;" data-reveal>
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="resume.html" class="btn btn-outline">Résumé</a>
+    <!-- ================= HERO ================= -->
+    <section class="hero section--dark">
+      <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-stagger" style="display:flex; flex-direction:column; align-items:flex-start; gap:var(--space-6);">
+          <span class="eyebrow"><span class="pulse-dot"></span> Open to Summer 2026 internships</span>
+
+          <h1 style="font-size:var(--fs-hero); max-width:15ch;">
+            Systems, <span class="text-gradient">applied AI</span>, and the rules that shape both.
+          </h1>
+
+          <p style="font-size:var(--fs-body-lg); color:var(--ink-soft); max-width:54ch;">
+            I'm Jude Zekra — an MIS student at the University of Georgia with certificates in Artificial Intelligence and Legal Studies.
+          </p>
+
+          <div style="display:flex; gap:var(--space-4); flex-wrap:wrap; margin-top:var(--space-2);">
+            <a href="#projects" class="btn btn-primary" data-magnetic="0.2">View projects <span class="btn-arrow">→</span></a>
+            <a href="resume.html" class="btn btn-outline" style="border-color:var(--color-dark-border);">Résumé</a>
+          </div>
+
+          <div class="stats" style="margin-top:var(--space-12);">
+            <div>
+              <div class="stat-value" data-count="4">0</div>
+              <div class="stat-label">Featured projects</div>
+            </div>
+            <div>
+              <div class="stat-value" data-count="2">0</div>
+              <div class="stat-label">Certificates</div>
+            </div>
+            <div>
+              <div class="stat-value" data-count="2027">0</div>
+              <div class="stat-label">Expected graduation</div>
+            </div>
+          </div>
+
+          <div class="scroll-cue" style="margin-top:var(--space-8);">
+            <span class="scroll-cue-dot"></span> Scroll
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee section--dark" style="border-top:none;">
+      <div class="marquee-track">
+        <span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span><span>Machine Learning</span><span>Systems Analysis</span><span>Data Modeling</span><span>AI Governance</span><span>Regulatory Compliance</span><span>Excel / VBA</span>
+        <span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span><span>Machine Learning</span><span>Systems Analysis</span><span>Data Modeling</span><span>AI Governance</span><span>Regulatory Compliance</span><span>Excel / VBA</span>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT ================= -->
     <section id="about" class="section">
       <div class="container">
         <div class="split">
-          <div data-reveal>
+          <div data-reveal="left">
             <span class="section-label">About</span>
+            <h2 style="font-size:var(--fs-h1);">Where technical work meets responsible oversight.</h2>
           </div>
-          <div data-reveal style="display:flex; flex-direction:column; gap:var(--space-6);">
+
+          <div data-reveal="right" style="display:flex; flex-direction:column; gap:var(--space-6);">
             <p style="font-size:var(--fs-body-lg);">
               I study how organizations design, analyze, and govern the systems they depend on. My AI coursework sharpened that into building and evaluating models; my Legal Studies coursework keeps me asking whether a system <em>should</em> work the way it does.
             </p>
             <p style="color:var(--ink-soft);">
-              I'm most interested in work that sits between technical execution and responsible oversight — business analysis, AI-adjacent product work, and compliance-minded systems design.
+              I'm drawn to work that sits between execution and accountability — business analysis, AI-adjacent product work, and compliance-minded systems design.
             </p>
 
-            <div class="grid-12" style="margin-top:var(--space-6); gap:var(--space-8);">
-              <div class="span-4 skill-group">
+            <div class="grid-12" style="margin-top:var(--space-4); gap:var(--space-8);">
+              <div class="span-4 skill-group" data-reveal="up">
                 <h3>Technical</h3>
                 <div class="tag-row">
-                  <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Excel / VBA</span>
+                  <span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">Tableau</span>
                 </div>
               </div>
-              <div class="span-4 skill-group">
+              <div class="span-4 skill-group" data-reveal="up">
                 <h3>Analytical</h3>
                 <div class="tag-row">
                   <span class="tag">Systems Analysis</span><span class="tag">Data Modeling</span><span class="tag">UML</span>
                 </div>
               </div>
-              <div class="span-4 skill-group">
+              <div class="span-4 skill-group" data-reveal="up">
                 <h3>Domain</h3>
                 <div class="tag-row">
                   <span class="tag">AI Governance</span><span class="tag">Compliance</span>
@@ -104,87 +149,89 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section section--tint">
       <div class="container">
-        <div class="section-head" data-reveal>
+        <div class="section-head" data-reveal="up">
           <span class="section-label">Projects</span>
           <h2 style="font-size:var(--fs-h1);">Selected work</h2>
         </div>
 
         <div class="grid-12">
-          <div class="span-6" data-reveal>
-            <div class="card">
-              <div class="card-media"><img src="assets/img/projects/dashboard.svg" alt="Sales dashboard mockup showing KPI charts"></div>
+          <div class="span-7" data-reveal="up">
+            <article class="card" data-tilt>
+              <div class="card-media"><img src="assets/img/projects/dashboard.svg" alt="Sales dashboard mockup showing KPI charts and a trend line"></div>
               <div class="card-body">
-                <span class="card-index">01</span>
+                <span class="card-index">01 — Business Intelligence</span>
                 <h3 class="card-title">Enterprise Sales Dashboard</h3>
                 <p class="card-desc">A SQL-backed Power BI dashboard for a retail/logistics scenario, cutting reporting turnaround from three days to same-day.</p>
-                <div class="tag-row"><span class="tag">SQL</span><span class="tag">Power BI</span></div>
-                <a href="#" class="card-link">Read more →</a>
+                <div class="tag-row"><span class="tag">SQL</span><span class="tag">Power BI</span><span class="tag">Data Modeling</span></div>
+                <a href="#" class="card-link">Read more <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
 
-          <div class="span-6" data-reveal>
-            <div class="card">
-              <div class="card-media"><img src="assets/img/projects/resume-screener.svg" alt="Diagram of an AI resume screening pipeline"></div>
+          <div class="span-5" data-reveal="up">
+            <article class="card" data-tilt>
+              <div class="card-media"><img src="assets/img/projects/resume-screener.svg" alt="Diagram of an AI resume screening pipeline with a model score"></div>
               <div class="card-body">
-                <span class="card-index">02</span>
+                <span class="card-index">02 — Machine Learning</span>
                 <h3 class="card-title">AI Resume Screener</h3>
-                <p class="card-desc">A Python model that scores resumes against job descriptions, built alongside an explicit bias-mitigation review.</p>
-                <div class="tag-row"><span class="tag">Python</span><span class="tag">Machine Learning</span></div>
-                <a href="#" class="card-link">Read more →</a>
+                <p class="card-desc">A Python model scoring resumes against job descriptions, built alongside an explicit bias-mitigation review.</p>
+                <div class="tag-row"><span class="tag">Python</span><span class="tag">NLP</span></div>
+                <a href="#" class="card-link">Read more <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
 
-          <div class="span-6" data-reveal>
-            <div class="card">
+          <div class="span-5" data-reveal="up">
+            <article class="card" data-tilt>
               <div class="card-media"><img src="assets/img/projects/registration-redesign.svg" alt="Process map for a course registration system redesign"></div>
               <div class="card-body">
-                <span class="card-index">03</span>
+                <span class="card-index">03 — Systems Analysis</span>
                 <h3 class="card-title">Course Registration Redesign</h3>
-                <p class="card-desc">A systems-analysis project: process mapping, requirements gathering, and a proposed architecture for a university registration workflow.</p>
-                <div class="tag-row"><span class="tag">Systems Analysis</span><span class="tag">UML</span></div>
-                <a href="#" class="card-link">Read more →</a>
+                <p class="card-desc">Process mapping, requirements gathering, and a proposed architecture for a university registration workflow.</p>
+                <div class="tag-row"><span class="tag">UML</span><span class="tag">Requirements</span></div>
+                <a href="#" class="card-link">Read more <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
 
-          <div class="span-6" data-reveal>
-            <div class="card">
-              <div class="card-media"><img src="assets/img/projects/ai-governance.svg" alt="Policy brief mapping an AI use case to a regulatory framework"></div>
+          <div class="span-7" data-reveal="up">
+            <article class="card" data-tilt>
+              <div class="card-media"><img src="assets/img/projects/ai-governance.svg" alt="Policy brief mapping an AI use case to a regulatory risk tier"></div>
               <div class="card-body">
-                <span class="card-index">04</span>
+                <span class="card-index">04 — Policy &amp; Governance</span>
                 <h3 class="card-title">AI Governance Policy Brief</h3>
                 <p class="card-desc">A policy memo mapping an AI use-case against the EU AI Act's risk tiers and the NIST AI Risk Management Framework.</p>
-                <div class="tag-row"><span class="tag">AI Governance</span><span class="tag">Policy</span></div>
-                <a href="#" class="card-link">Read more →</a>
+                <div class="tag-row"><span class="tag">AI Governance</span><span class="tag">Compliance</span><span class="tag">Policy</span></div>
+                <a href="#" class="card-link">Read more <span class="btn-arrow">→</span></a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section section--dark" style="position:relative; overflow:hidden;">
+      <div class="hero-bg"><div class="orb orb-2" style="opacity:0.28;"></div></div>
+      <div class="container" style="position:relative; z-index:1;">
         <div class="split">
-          <div data-reveal>
+          <div data-reveal="left">
             <span class="section-label">Contact</span>
-            <h2 style="font-size:var(--fs-h1); margin-bottom:var(--space-4);">Get in touch</h2>
-            <p style="color:var(--ink-soft); max-width:36ch;">
+            <h2 style="font-size:var(--fs-h1); margin-bottom:var(--space-4);">Let's build something.</h2>
+            <p style="color:var(--ink-soft); max-width:38ch;">
               Open to internships and new-grad roles across tech, business analysis, and AI governance.
             </p>
-            <div style="display:flex; gap:var(--space-6); margin-top:var(--space-6);">
-              <a href="mailto:judezekra@yahoo.com" class="nav-link">Email</a>
-              <a href="https://linkedin.com" class="nav-link">LinkedIn</a>
-              <a href="https://github.com/judezekra" class="nav-link">GitHub</a>
+            <div style="display:flex; gap:var(--space-6); margin-top:var(--space-8); flex-wrap:wrap;">
+              <a href="mailto:judezekra@yahoo.com" class="social-link">Email</a>
+              <a href="https://linkedin.com" class="social-link">LinkedIn</a>
+              <a href="https://github.com/judezekra" class="social-link">GitHub</a>
             </div>
           </div>
-          <form data-reveal action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+          <form data-reveal="right" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="form-field">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required>
@@ -197,7 +244,7 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary" data-magnetic="0.15">Send message <span class="btn-arrow">→</span></button>
           </form>
         </div>
       </div>
@@ -208,15 +255,16 @@
   <footer class="site-footer section--dark">
     <div class="container">
       <div class="footer-top">
-        <span class="logo">Jude Zekra</span>
-        <div style="display:flex; gap:var(--space-6);">
-          <a href="mailto:judezekra@yahoo.com" class="nav-link">Email</a>
-          <a href="https://linkedin.com" class="nav-link">LinkedIn</a>
-          <a href="https://github.com/judezekra" class="nav-link">GitHub</a>
+        <a href="index.html" class="logo"><span class="logo-mark">JZ</span> Jude Zekra</a>
+        <div style="display:flex; gap:var(--space-6); flex-wrap:wrap;">
+          <a href="mailto:judezekra@yahoo.com" class="social-link">Email</a>
+          <a href="https://linkedin.com" class="social-link">LinkedIn</a>
+          <a href="https://github.com/judezekra" class="social-link">GitHub</a>
         </div>
       </div>
-      <div class="footer-grid" style="font-size:var(--fs-small); color:var(--ink-soft);">
+      <div class="footer-grid">
         <span>© 2026 Jude Zekra</span>
+        <span>Built with plain HTML, CSS &amp; JavaScript</span>
       </div>
     </div>
   </footer>
@@ -224,5 +272,6 @@
   <script defer src="assets/js/nav.js"></script>
   <script defer src="assets/js/scroll-reveal.js"></script>
   <script defer src="assets/js/smooth-scroll.js"></script>
+  <script defer src="assets/js/motion.js"></script>
 </body>
 </html>
