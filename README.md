@@ -2,6 +2,15 @@
 
 Source for the personal portfolio site, built as plain HTML/CSS/JS with no build step, deployed via GitHub Pages.
 
+## Structure
+
+`index.html` (hero / about / projects / contact), `resume.html`, `404.html`.
+Styles in `assets/css` (variables → base → layout → components → animations),
+behavior in `assets/js` (`nav.js`, `scroll-reveal.js`, `smooth-scroll.js`, `motion.js`).
+
+There is no blog — the placeholder posts were removed. To add one later, create
+`blog/index.html` plus a page per post and re-add a nav link.
+
 ## Before going live, replace these placeholders
 
 - **Content**: bio text, project descriptions/links, blog posts — currently placeholder copy tailored to an MIS + AI + Legal Studies profile.

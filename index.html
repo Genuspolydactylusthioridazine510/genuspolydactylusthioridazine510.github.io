@@ -29,7 +29,10 @@
 </head>
 <body>
 
+  <div class="intro"><div class="intro-mark">JZ</div></div>
+
   <div class="scroll-progress"></div>
+  <nav class="spy-nav" aria-label="Section navigation"></nav>
 
   <header class="site-header section--dark">
     <div class="container">
@@ -42,7 +45,6 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="resume.html" class="nav-link">Resume</a></li>
-          <li><a href="blog/index.html" class="nav-link">Writing</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -53,18 +55,18 @@
   <main>
 
     <!-- ================= HERO ================= -->
-    <section class="hero section--dark">
-      <div class="hero-bg">
+    <section id="top" class="hero section--dark" data-spy-label="Intro">
+      <div class="hero-bg" data-particles>
         <div class="hero-grid"></div>
         <div class="orb orb-1"></div>
         <div class="orb orb-2"></div>
       </div>
 
-      <div class="container hero-content">
+      <div class="container hero-content" data-parallax>
         <div class="hero-stagger" style="display:flex; flex-direction:column; align-items:flex-start; gap:var(--space-6);">
           <span class="eyebrow"><span class="pulse-dot"></span> Open to Summer 2026 internships</span>
 
-          <h1 style="font-size:var(--fs-hero); max-width:15ch;">
+          <h1 style="font-size:var(--fs-hero); max-width:15ch;" data-split>
             Systems, <span class="text-gradient">applied AI</span>, and the rules that shape both.
           </h1>
 
@@ -108,7 +110,7 @@
     </div>
 
     <!-- ================= ABOUT ================= -->
-    <section id="about" class="section">
+    <section id="about" class="section" data-spy-label="About">
       <div class="container">
         <div class="split">
           <div data-reveal="left">
@@ -150,7 +152,7 @@
     </section>
 
     <!-- ================= PROJECTS ================= -->
-    <section id="projects" class="section section--tint">
+    <section id="projects" class="section section--tint" data-spy-label="Projects">
       <div class="container">
         <div class="section-head" data-reveal="up">
           <span class="section-label">Projects</span>
@@ -214,7 +216,7 @@
     </section>
 
     <!-- ================= CONTACT ================= -->
-    <section id="contact" class="section section--dark" style="position:relative; overflow:hidden;">
+    <section id="contact" class="section section--dark" data-spy-label="Contact" style="position:relative; overflow:hidden;">
       <div class="hero-bg"><div class="orb orb-2" style="opacity:0.28;"></div></div>
       <div class="container" style="position:relative; z-index:1;">
         <div class="split">
