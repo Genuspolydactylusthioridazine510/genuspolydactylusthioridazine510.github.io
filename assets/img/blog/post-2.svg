@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#0F0E0D"/>
-  <rect x="60" y="260" width="180" height="140" rx="10" fill="none" stroke="#E86A44" stroke-width="3"/>
-  <rect x="270" y="220" width="180" height="180" rx="10" fill="none" stroke="#A9A296" stroke-width="3"/>
-  <rect x="480" y="290" width="180" height="110" rx="10" fill="none" stroke="#A9A296" stroke-width="3"/>
-  <text x="60" y="90" font-family="Georgia, serif" font-size="26" fill="#F5F1E8">AI Governance</text>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#111111"/>
+  <rect x="60" y="260" width="180" height="140" rx="10" fill="none" stroke="#8AB0D9" stroke-width="3"/>
+  <rect x="270" y="220" width="180" height="180" rx="10" fill="none" stroke="#979793" stroke-width="3"/>
+  <rect x="480" y="290" width="180" height="110" rx="10" fill="none" stroke="#979793" stroke-width="3"/>
+  <text x="60" y="90" font-family="Georgia, serif" font-size="26" fill="#F5F5F3">AI Governance</text>
 </svg>

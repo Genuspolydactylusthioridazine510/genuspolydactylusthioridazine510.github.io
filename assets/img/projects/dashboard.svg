@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#FAF7F2"/>
-  <rect x="40" y="40" width="720" height="60" rx="10" fill="#FFFFFF" stroke="#E7E1D6"/>
-  <text x="60" y="78" font-family="Georgia, serif" font-size="24" fill="#1C1A17">Sales Overview — Q3</text>
-  <rect x="40" y="120" width="220" height="150" rx="10" fill="#FFFFFF" stroke="#E7E1D6"/>
-  <text x="60" y="155" font-family="monospace" font-size="12" fill="#5B564E">REVENUE</text>
-  <text x="60" y="200" font-family="Georgia, serif" font-size="34" fill="#B5472B">$482K</text>
-  <rect x="280" y="120" width="220" height="150" rx="10" fill="#FFFFFF" stroke="#E7E1D6"/>
-  <text x="300" y="155" font-family="monospace" font-size="12" fill="#5B564E">ORDERS</text>
-  <text x="300" y="200" font-family="Georgia, serif" font-size="34" fill="#1C1A17">3,214</text>
-  <rect x="520" y="120" width="240" height="150" rx="10" fill="#FFFFFF" stroke="#E7E1D6"/>
-  <text x="540" y="155" font-family="monospace" font-size="12" fill="#5B564E">TURNAROUND</text>
-  <text x="540" y="200" font-family="Georgia, serif" font-size="34" fill="#1C1A17">Same-day</text>
-  <rect x="40" y="300" width="720" height="160" rx="10" fill="#FFFFFF" stroke="#E7E1D6"/>
-  <polyline points="70,420 160,380 250,400 340,340 430,360 520,300 610,330 700,290" fill="none" stroke="#B5472B" stroke-width="4"/>
+  <rect width="800" height="500" fill="#FFFFFF"/>
+  <rect x="40" y="40" width="720" height="60" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="60" y="78" font-family="Georgia, serif" font-size="24" fill="#111111">Sales Overview - Q3</text>
+  <rect x="40" y="120" width="220" height="150" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="60" y="155" font-family="monospace" font-size="12" fill="#5F5F5C">REVENUE</text>
+  <text x="60" y="200" font-family="Georgia, serif" font-size="34" fill="#2F4A6D">$482K</text>
+  <rect x="280" y="120" width="220" height="150" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="300" y="155" font-family="monospace" font-size="12" fill="#5F5F5C">ORDERS</text>
+  <text x="300" y="200" font-family="Georgia, serif" font-size="34" fill="#111111">3,214</text>
+  <rect x="520" y="120" width="240" height="150" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <text x="540" y="155" font-family="monospace" font-size="12" fill="#5F5F5C">TURNAROUND</text>
+  <text x="540" y="200" font-family="Georgia, serif" font-size="34" fill="#111111">Same-day</text>
+  <rect x="40" y="300" width="720" height="160" rx="10" fill="#FFFFFF" stroke="#E4E4E1"/>
+  <polyline points="70,420 160,380 250,400 340,340 430,360 520,300 610,330 700,290" fill="none" stroke="#2F4A6D" stroke-width="4"/>
 </svg>

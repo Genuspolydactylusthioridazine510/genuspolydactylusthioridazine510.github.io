@@ -71,7 +71,7 @@ input, textarea {
 
 ::selection {
   background: var(--color-accent-soft);
-  color: var(--color-ink);
+  color: var(--color-accent);
 }
 
 :focus-visible {
@@ -80,15 +80,15 @@ input, textarea {
   border-radius: var(--radius-sm);
 }
 
-/* Custom scrollbar (WebKit + Firefox) */
+/* Scrollbar */
 html {
-  scrollbar-color: var(--color-accent) var(--color-bg);
+  scrollbar-color: #C9C9C5 var(--color-bg);
   scrollbar-width: thin;
 }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-track { background: var(--color-bg); }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-accent);
+  background: #C9C9C5;
   border-radius: var(--radius-pill);
   border: 2px solid var(--color-bg);
 }

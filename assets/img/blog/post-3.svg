@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
-  <rect width="800" height="500" fill="#0F0E0D"/>
-  <rect x="80" y="120" width="280" height="340" fill="none" stroke="#A9A296" stroke-width="2"/>
-  <line x1="110" y1="170" x2="330" y2="170" stroke="#A9A296"/>
-  <line x1="110" y1="200" x2="300" y2="200" stroke="#A9A296"/>
-  <line x1="110" y1="230" x2="320" y2="230" stroke="#A9A296"/>
-  <rect x="440" y="120" width="280" height="340" fill="none" stroke="#E86A44" stroke-width="2"/>
-  <line x1="470" y1="170" x2="690" y2="170" stroke="#E86A44"/>
-  <line x1="470" y1="200" x2="660" y2="200" stroke="#E86A44"/>
-  <line x1="470" y1="230" x2="680" y2="230" stroke="#E86A44"/>
-  <text x="60" y="90" font-family="Georgia, serif" font-size="26" fill="#F5F1E8">Legal × Systems</text>
+  <rect width="800" height="500" fill="#111111"/>
+  <rect x="80" y="120" width="280" height="340" fill="none" stroke="#979793" stroke-width="2"/>
+  <line x1="110" y1="170" x2="330" y2="170" stroke="#979793"/>
+  <line x1="110" y1="200" x2="300" y2="200" stroke="#979793"/>
+  <line x1="110" y1="230" x2="320" y2="230" stroke="#979793"/>
+  <rect x="440" y="120" width="280" height="340" fill="none" stroke="#8AB0D9" stroke-width="2"/>
+  <line x1="470" y1="170" x2="690" y2="170" stroke="#8AB0D9"/>
+  <line x1="470" y1="200" x2="660" y2="200" stroke="#8AB0D9"/>
+  <line x1="470" y1="230" x2="680" y2="230" stroke="#8AB0D9"/>
+  <text x="60" y="90" font-family="Georgia, serif" font-size="26" fill="#F5F5F3">Legal and Systems</text>
 </svg>
